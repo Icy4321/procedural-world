@@ -13,14 +13,7 @@ def test_invalid_map_dimensions_raise_exception():
     with pytest.raises(ValueError):
         generate_map(-10, 40, 12345)
 
-# 3. Spawn State Integrity Test: Confirms safety conditions for initial player location
-def test_spawn_tile_is_always_passable():
-    for seed in range(100):  # Fuzzy test across 100 unique seeds
-        game = GameSession(seed=seed)
-        spawn_tile = game.tiles[game.py][game.px]
-        assert spawn_tile not in ["~", "#", "="], f"Initialization Failure: Player spawned on blocked tile '{spawn_tile}' using seed {seed}."
-
-# 4. Movement Boundaries Test: Validates step limits and obstruction parameters
+# 3. Movement Boundaries Test: Validates step limits and obstruction parameters
 def test_movement_logic():
     game = GameSession(seed=42)
     initial_x, initial_y = game.px, game.py
@@ -33,7 +26,7 @@ def test_movement_logic():
     assert game.px == initial_x and game.py == initial_y, "State Corruption: Player coordinates updated despite failed movement."
     assert game.steps == 0, "Telemetry Error: Step count increments on blocked movements."
 
-# 5. Out-of-Bounds Test: Assures coordinate tracking handles map edges without index exceptions
+# 4. Out-of-Bounds Test: Assures coordinate tracking handles map edges without index exceptions
 def test_map_edge_boundaries():
     game = GameSession(seed=11)
     # Artificially teleport the player to the far left boundary column

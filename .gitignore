@@ -1,0 +1,15 @@
+# Python bytecode cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Pytest runtime environment cache
+.pytest_cache/
+
+# Local VS Code workspace settings
+.vscode/
+
+# Operating system junk files
+.DS_Store
+Thumbs.db

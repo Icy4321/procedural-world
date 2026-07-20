@@ -28,8 +28,9 @@ Prerequisites:
 
 1. Installation:
 Clone this repository
+
 git clone https://github.com/Icy4321/procedural-world.git
-cd qa-procedural-world
+cd procedural-world
 
 Install the required test engine packages:
 pip install -r requirements.txt

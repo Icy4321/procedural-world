@@ -1,8 +1,8 @@
-- Testable 2D Procedural World Engine
+# Testable 2D Procedural World Engine
 
 A modular, cross-platform 2D world generation engine built in Python, showcasing a decoupled framework specifically engineered for automated testing and CI/CD validation. 
 
-- Architecture and QA Methodology
+# Architecture and QA Methodology
 
 In traditional script design, simulation logic is heavily coupled with user-interface inputs and platform-specific terminal console functions. This layout refactors that pattern into a clean, testable design:
 
@@ -35,7 +35,7 @@ Prerequisites:
 
 1. Installation:
 Clone this repository to your local system and navigate to the project directory:
-git clone https://github.com/YOUR_USERNAME/qa-procedural-world.git
+git clone https://github.com/Icy4321/procedural-world.git
 cd qa-procedural-world
 
 Install the required test engine packages:

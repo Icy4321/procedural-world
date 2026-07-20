@@ -11,8 +11,9 @@ In traditional script design, simulation logic is heavily coupled with user-inte
 * Deterministic Verification: Validates map generation deterministically across identical random seeds to ensure world stability.
 * Boundary Validation and Edge Handling: Sweeps limits for out-of-bounds array coordinates, tests negative space vectors, checks obstacle collision boundaries, and asserts fuzzy-tested safe spawning logic across 100 iterations.
 
-- Project Structure
+# Project Structure
 
+```
 qa-procedural-world/
 |
 |-- src/                      # Production source logic
@@ -27,8 +28,9 @@ qa-procedural-world/
 |-- pyproject.toml            # Path mapping for test environment root
 |-- requirements.txt          # Framework dependencies
 |-- README.md                 # Project documentation
+```
 
-- Getting Started
+# Getting Started
 
 Prerequisites:
 * Python 3.8 or higher installed on your system.
